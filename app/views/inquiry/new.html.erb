@@ -1,0 +1,47 @@
+
+<!-- Contact Section -->
+    <!-- Title Page -->
+    <!-- Contact Form -->
+      <div class="inquiry_container">
+        <div id="contact-form" class="contact-form">
+          <div class="title-page">
+            <h2 class="title">ご依頼は以下のフォームにご記入ください</h2>
+          </div>
+          <%= form_for @inquiry, :url => inquiry_confirmation_path do |f| %>
+            <div class="form_inquiry">
+            <p class="contact-name">
+              <div id:"contact_name">
+              <%= f.text_field :name, placeholder:"お名前" %>
+              </div>
+            </p>
+            </div>
+            <div class="form_inquiry">
+            <p class="contact-email">
+              <div id="contact_email">
+              <%= f.text_field :email, placeholder:"メールアドレス" %>
+              </div>
+            </p>
+            </div>
+            <div class="form_inquiry">
+            <p class="contact-message">
+              <div id="contact_message">
+                <%= f.text_area :message, placeholder:"ご依頼内容" %>
+              </div>
+            </p>
+            </div>
+            <div class="form_inquiry">
+            <p class="contact-submit">
+               <div id="contact-submit" class="submit">
+               <%= f.submit :"確認"%>
+               </div>
+            </p>
+            </div>
+            <div id="response">
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+    <!-- End Contact Form -->
+
+<!-- End Contact Section -->
