@@ -54,5 +54,8 @@ group :production, :staging do
   gem 'pg'
 end
 
+<<<<<<< HEAD
 gem 'thin'
 gem 'foreman'
+=======
+>>>>>>> parent of e71d26c... Thin
